@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Function</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+
+      // FUNCTIONS
+      // ================================================================================
+
+      // Create a Function called "adder" that take three arguments (x, y, z).
+      // The function should add the arguments together, and log the result to the console.
+function adder(x,y,z){
+  console.log(x + y + z);
+}
+
+      // Create a Function called "multiplier" that takes three arguments (x, y, z).
+      // The function should multiply the arguments, and log the result to the console.
+function multiplier(x,y,z){
+  console.log(x * y * z);
+}
+
+      // Create a Function called "isString" that takes three arguments (x, y, z).
+      // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
+function isString(x,y,z){
+  if (typeof x === "string" && typeof y === "string" && typeof z === "string") {
+    console.log("All three arguments are strings.")
+  } else {
+    console.log("Not all three arguments are strings.")
+  }
+}
+
+      // Create a Function called "vowelChecker" that takes in a single argument (x).
+      // "vowelChecker" logs whether or not the input is a vowel.
+function vowelChecker(x){
+  const vowels = ["a", "e", "i", "o", "u"];
+  if (vowels.indexOf(x.toLowerCase()) >= 0){
+    console.log("Input is a vowel.");
+  } else {
+    console.log("Input is not a vowel.")
+  }
+}
+
+      // BONUS
+      // Creates a version of "adder" that returns its result. Function is called "adderReturn".
+function adderReturn(x,y,z){
+  return x + y + z;
+}
+
+
+      // Creates a version of "multiplier" that returns its result. Function is called "multiplierReturn".
+function multiplierReturn(x,y,z){
+  return x * y * z;
+}
+
+      // FUNCTION EXECUTION
+      // ================================================================================
+
+      // Add in the lines of code below necessary to call the functions we created above.
+
+
+      // Call the adder function here.
+
+
+      adder(2,3,4);
+
+
+      // Call the multiplier function here.
+
+
+      multiplier(1, 2, 3);
+
+
+      // Call the isString function here.
+
+
+      isString("red", "blue", "green");
+
+
+      // Call the vowelChecker function here.
+
+
+      vowelChecker("b");
+
+
+      // BONUS
+      // Call the adderReturn function here and set it equal to a variable. Then log that variable to the console.
+
+      let numAdder = adderReturn(3,4,5);
+      console.log(numAdder);
+
+
+      // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the console.
+      let numMultiplier = multiplierReturn(3,4,5);
+      console.log(numMultiplier);
+
+    </script>
+
+  </body>
+</html>
